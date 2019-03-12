@@ -14,4 +14,4 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http"   % "10.1.7",
   "com.typesafe.akka" %% "akka-http-spray-json" % "10.1.7")
 
-mainClass := Some("com.nuvola_tech.tests.BackPressureTest")
+mainClass := Some("com.nuvola_tech.akka.streans.BackPressureTest")

@@ -111,7 +111,7 @@ object BackPressureTest  extends JsonSupport {
     // this will cause the stream to retry sending the data.
     // Try changing the error code to InternalServerError, instead
     // of retrying, the stream will terminate.
-    val server = new TestHttpServer(1D, StatusCodes.TooManyRequests)
+    val server = new TestHttpServer(0.3D, StatusCodes.TooManyRequests)
     //val server = new TestHttpServer(0.1D, StatusCodes.InternalServerError)
 
     // generate random data
